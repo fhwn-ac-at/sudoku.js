@@ -31,7 +31,7 @@ body {
     margin-right:auto;
     margin-bottom:0px;
     width: 63px;
-    height: 45px;
+    height: 63px;
     padding: 0px;
     font-size: 40px;
     text-align: center;
@@ -43,6 +43,10 @@ body {
 
 #sudoku-board .border-bottom {
     border-bottom: 2px solid black;
+}
+
+#sudoku-puzzle {
+    width: 100%;
 }
 
 .green-text {

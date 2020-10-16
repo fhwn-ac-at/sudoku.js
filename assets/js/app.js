@@ -259,8 +259,11 @@ var show_puzzle = function(puzzle, refresh){
         if(puzzle === "import"){
             boards[puzzle] = sudoku.board_string_to_grid(sudoku.BLANK_BOARD);
         } else {
+            var puzzleString = sudoku.generate(puzzle);
+            $("#sudoku-puzzle").val(
+                puzzleString.replace(/\./g, "0").split("").join(","));
             boards[puzzle] = 
-                sudoku.board_string_to_grid(sudoku.generate(puzzle));
+                sudoku.board_string_to_grid(puzzleString);
         }
     }
     
